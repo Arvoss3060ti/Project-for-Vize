@@ -32,9 +32,11 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            EmanetUyeNo = new TextBox();
+            EmanetKitapKod = new TextBox();
+            EmanetTeslimTarihi = new TextBox();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -45,6 +47,7 @@
             button1.TabIndex = 0;
             button1.Text = "Emanet Ekle";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -73,35 +76,57 @@
             label3.TabIndex = 3;
             label3.Text = "Emanet Teslim Tarihi :";
             // 
-            // textBox1
+            // EmanetUyeNo
             // 
-            textBox1.Location = new Point(56, 68);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(276, 27);
-            textBox1.TabIndex = 4;
+            EmanetUyeNo.Location = new Point(56, 68);
+            EmanetUyeNo.Name = "EmanetUyeNo";
+            EmanetUyeNo.Size = new Size(276, 27);
+            EmanetUyeNo.TabIndex = 4;
             // 
-            // textBox2
+            // EmanetKitapKod
             // 
-            textBox2.Location = new Point(56, 149);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(276, 27);
-            textBox2.TabIndex = 5;
+            EmanetKitapKod.Location = new Point(56, 149);
+            EmanetKitapKod.Name = "EmanetKitapKod";
+            EmanetKitapKod.Size = new Size(276, 27);
+            EmanetKitapKod.TabIndex = 5;
             // 
-            // textBox3
+            // EmanetTeslimTarihi
             // 
-            textBox3.Location = new Point(56, 227);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(276, 27);
-            textBox3.TabIndex = 6;
+            EmanetTeslimTarihi.Location = new Point(56, 227);
+            EmanetTeslimTarihi.Name = "EmanetTeslimTarihi";
+            EmanetTeslimTarihi.Size = new Size(276, 27);
+            EmanetTeslimTarihi.TabIndex = 6;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(303, 378);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 7;
+            button2.Text = "Kaydet";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(12, 378);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 8;
+            button3.Text = "Yükle";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(394, 406);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(409, 418);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(EmanetTeslimTarihi);
+            Controls.Add(EmanetKitapKod);
+            Controls.Add(EmanetUyeNo);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,8 +143,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox EmanetUyeNo;
+        private TextBox EmanetKitapKod;
+        private TextBox EmanetTeslimTarihi;
+        private Button button2;
+        private Button button3;
     }
 }

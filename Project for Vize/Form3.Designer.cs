@@ -37,6 +37,8 @@
             label3 = new Label();
             label4 = new Label();
             KitapKoduTextBox = new TextBox();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // KitapKaydetButton
@@ -113,11 +115,33 @@
             KitapKoduTextBox.Size = new Size(189, 27);
             KitapKoduTextBox.TabIndex = 8;
             // 
+            // button1
+            // 
+            button1.Location = new Point(238, 408);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 9;
+            button1.Text = "Kaydet";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(13, 413);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 10;
+            button2.Text = "Yükle";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(333, 437);
+            ClientSize = new Size(364, 459);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(KitapKoduTextBox);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -144,5 +168,7 @@
         private Label label3;
         private Label label4;
         private TextBox KitapKoduTextBox;
+        private Button button1;
+        private Button button2;
     }
 }

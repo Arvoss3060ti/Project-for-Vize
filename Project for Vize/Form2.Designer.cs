@@ -35,6 +35,8 @@
             label2 = new Label();
             label3 = new Label();
             OgrenciSistemeEkleButton = new Button();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // ogrenciAdiTextBox
@@ -95,11 +97,33 @@
             OgrenciSistemeEkleButton.UseVisualStyleBackColor = true;
             OgrenciSistemeEkleButton.Click += OgrenciSistemeEkleButton_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(415, 372);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 7;
+            button1.Text = "Kaydet";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(12, 372);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 8;
+            button2.Text = "Yükle";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(521, 413);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(OgrenciSistemeEkleButton);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -122,5 +146,7 @@
         private Label label2;
         private Label label3;
         private Button OgrenciSistemeEkleButton;
+        private Button button1;
+        private Button button2;
     }
 }
